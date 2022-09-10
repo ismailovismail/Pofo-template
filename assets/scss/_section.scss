@@ -3,6 +3,10 @@
     width: 100%;
     transition: .5s;
     position: absolute;
+    
+   
+    
+ 
   
 }
 
@@ -19,8 +23,11 @@ opacity: 0;
 
 
 
+
 }
 .sec1{width: 100%;
+
+    
 
 
  
@@ -81,10 +88,18 @@ opacity: 0;
                 }
             }
            .buton{
+              .change-lang{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              }
+
+              .change-backgr{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              }
             button{
                 cursor: pointer;
             }
            }
+         
         }
     }
     .butons{
@@ -113,6 +128,7 @@ opacity: 0;
                 cursor: pointer;
                   span{
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    display: none;
                   }
              
               
@@ -138,6 +154,7 @@ opacity: 0;
                 cursor: pointer;
                 span{
                   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                  display: none;
                 }
             }
         }
@@ -149,16 +166,20 @@ opacity: 0;
       }
     .body{
         width: 100%;
-        height:550px;
+        height: 620px;
         display: flex;
         align-items: center;
+     
+        
+  
 
         .container-fluid{
             width: 80%;
+            height: 620px;
 
                 .into{
                     width: 100%;
-                    height: 350px;
+                    height: 520px;
                     align-items: center;
                     display: flex;
                     justify-content: space-between;
@@ -189,6 +210,7 @@ opacity: 0;
                             100%{transform: translate(0px);}
                         }
                         .text1{
+                            width: 100%;
                             height: 170px;
                             display: flex;
                             flex-direction: column;
@@ -230,6 +252,7 @@ opacity: 0;
         }
     }
 }
+
 @media only screen and (max-width: 576px){
     .upsec1{
         .sec1{
@@ -249,13 +272,13 @@ opacity: 0;
                 display: none;
             }
               .body{
-                height: 400px;
+                height: 800px;
                 .container-fluid{
                     .into{
                         display: flex;
                         flex-direction: column;
                         .text{
-                            width: 100%;
+                            width: 100% !important;
                         }
                         .text1{
                             height: 80px;
@@ -283,7 +306,7 @@ opacity: 0;
 }
 .sec2{
     width: 100%;
-    background-color: black;
+    background-color:black;
  
   
    
@@ -300,7 +323,22 @@ opacity: 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            .buton-icon{
+            .buton-icon{width: 15%; 
+                display: flex;
+                justify-content: space-evenly;
+                .chng-backgr{
+                    button{
+                        background-color: white;
+                        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+                }
+                .lang-btn{display: flex;
+                    align-items: center;
+                    button{
+                        background-color: white;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+                }
                 button{
                     i{
                         color: white;
@@ -312,7 +350,7 @@ opacity: 0;
 
     .body{
         width: 100%;
-        height: 500px;
+        height: 550px;
        
     
            .container-fluid{
@@ -453,11 +491,19 @@ opacity: 0;
 }
 @media only screen and (max-width: 576px){
     .upsec2{
-        .sec2{
+        .sec2{ 
+            header{
+                    .buton-icon{
+                        width: 40% !important;
+                        display: flex !important;
+                        justify-content: space-between !important;
+                    }
+                  }
             .body{
-                height: 600px;
+                height: 800px;
                 .container-fluid{
                     width: 90%;
+                 
                     .into{width: 100%;
                         height: 500px;
                         display: flex;
